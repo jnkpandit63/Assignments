@@ -55,6 +55,8 @@ public class Assignment1 {
 		System.out.println("response status line : "+response.getStatusLine());
 		Assert.assertEquals("HTTP/1.1 201 Created", response.getStatusLine());
 		Assert.assertEquals(201, response.getStatusCode());
+		Assert.assertEquals("application/json; charset=utf-8", response.getContentType());
+		System.out.println("response content type : "+response.getContentType());
 	}
 	
 	@Given("Api for testing")

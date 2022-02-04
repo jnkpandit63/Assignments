@@ -27,6 +27,7 @@ void test1() {
 	Response getResponse = RestAssured.get(URL);
 	System.out.println(getResponse.getStatusCode());
 	Assert.assertEquals(getResponse.getStatusCode(), 200);
+	Assert.assertEquals("application/json; charset=utf-8", getResponse.getContentType());
 	}
 	
 	@Test
