@@ -1,7 +1,7 @@
 
 Feature: API Testing
 
-  @tag1
+  @tag1 #assertion
   Scenario: POST Method
     Given API for testing
     When posted with correct information
@@ -49,6 +49,13 @@ Feature: API Testing
   Given API for testing negative post method
   When posted incorrect information
   Then Validate negative response code for negative post method
+  
+  @tag9
+  Scenario: POST Method with data provider
+    Given API for testing POST method with data provider
+    When posted with data provider
+    Then validate response code
+  
   
   
   

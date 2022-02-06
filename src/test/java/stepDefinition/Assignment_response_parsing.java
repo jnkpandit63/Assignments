@@ -11,7 +11,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Assignment3 {
+public class Assignment_response_parsing {
 	RequestSpecification request;
 	Response response;
 	@Given("API for testing Post register")
