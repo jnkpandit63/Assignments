@@ -1,4 +1,4 @@
-package assignment2;
+package RestAssured;
 
 import org.testng.annotations.Test;
 
